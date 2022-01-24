@@ -9,7 +9,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run lint && npm run format && npm run build",
-    "pub": "npm run prepare && npm publish"
+    "pub": "npm run prepare && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
