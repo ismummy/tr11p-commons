@@ -1,0 +1,39 @@
+{
+  "name": "tr11p-commons",
+  "version": "1.0.5",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run lint && npm run format && npm run build",
+    "pub": "npm run prepare && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismummy/tr11p-commons.git"
+  },
+  "keywords": [
+    "Kafka Producer",
+    "Tr11p",
+    "Commons",
+    "Utilities"
+  ],
+  "author": "OLALEKAN ISMAIL",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "prettier": "^2.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
+}
